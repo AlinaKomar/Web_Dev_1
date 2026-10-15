@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "BankSystem.EF": {
+      "commandName": "Project"
+    },
+    "Profile 1": {
+      "commandName": "Project"
+    },
+    "Profile 2": {
+      "commandName": "Executable",
+      "executablePath": "D:\\progr2\\Web_Dev_1\\BankSystem.Services\\BankSystem.Services.csproj"
+    }
+  }
+}
