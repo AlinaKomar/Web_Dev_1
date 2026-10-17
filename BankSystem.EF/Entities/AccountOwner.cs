@@ -3,6 +3,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BankSystem.EF.Entities;
 
+/// <summary>
+/// Represents a bank account owner stored in the database.
+/// </summary>
 [Table("account_owner")]
 public class AccountOwner
 {

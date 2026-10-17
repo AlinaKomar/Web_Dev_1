@@ -3,13 +3,24 @@ using BankSystem.Services.Models;
 
 namespace BankSystem.Services.Services;
 
+/// <summary>
+/// Provides reports about account owners.
+/// </summary>
 public class OwnerService : BaseService
 {
+    /// <summary>
+    /// Initializes a new instance of the <see cref="OwnerService"/> class.
+    /// </summary>
+    /// <param name="bankContext">The database context used by the service.</param>
     public OwnerService(BankContext bankContext)
         : base(bankContext)
     {
     }
 
+    /// <summary>
+    /// Gets the total balance of every account owner in every currency, largest total first.
+    /// </summary>
+    /// <returns>One row per owner and currency.</returns>
     public IReadOnlyList<AccountOwnerTotalBalanceModel> GetAccountOwnersTotalBalance()
     {
         var accounts = this.Context.BankAccounts

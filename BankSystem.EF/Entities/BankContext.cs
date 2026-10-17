@@ -2,6 +2,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BankSystem.EF.Entities;
 
+/// <summary>
+/// Entity Framework context of the Bank System database.
+/// </summary>
 public class BankContext : DbContext
 {
     public BankContext(DbContextOptions options)

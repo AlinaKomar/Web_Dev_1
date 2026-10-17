@@ -1,5 +1,8 @@
 namespace BankSystem.Services.Models;
 
+/// <summary>
+/// Represents full information about a bank account together with its owner.
+/// </summary>
 public class BankAccountFullInfoModel
 {
     public int BankAccountId { get; set; }

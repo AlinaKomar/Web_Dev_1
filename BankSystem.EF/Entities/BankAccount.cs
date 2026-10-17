@@ -3,6 +3,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BankSystem.EF.Entities;
 
+/// <summary>
+/// Represents a bank account stored in the database.
+/// </summary>
 [Table("bank_account")]
 public class BankAccount
 {

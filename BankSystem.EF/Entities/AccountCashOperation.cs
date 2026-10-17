@@ -3,6 +3,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BankSystem.EF.Entities;
 
+/// <summary>
+/// Represents a cash operation of a bank account stored in the database.
+/// </summary>
 [Table("account_cash_operation")]
 public class AccountCashOperation
 {
